@@ -7,7 +7,7 @@ import java.io.IOException;
  */
 public class Copy {
 
-    public class StartCopy(){
+    public void StartCopy (String src){
 
         String source = src;
 
