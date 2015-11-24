@@ -7,12 +7,14 @@ import java.io.IOException;
  */
 public class Copy {
 
-    public void StartCopy (String src){
+    public void StartCopy (String src,String dest,String log){
 
+        String copyLog = log;
         String source = src;
+        String destination = dest;
 
         try{
-            Process p = Runtime.getRuntime().exec("cmd /c start C:/Users/ahmad/Desktop/log/Copy.bat " + source);
+            Process p = Runtime.getRuntime().exec("cmd /c start D:/Java_Programs/NewRelease/batch/Copy.bat " + source + " " + destination + " "+ copyLog);
             p.waitFor();
 
         }catch (IOException e) {

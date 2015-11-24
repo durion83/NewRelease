@@ -33,7 +33,7 @@
             </MenuBar>
             <TabPane prefHeight="388.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Untitled Tab 1">
+                <Tab fx:id="branchesTab" closable="false" text="Branches">
                      <content>
                         <SplitPane prefHeight="160.0" prefWidth="200.0">
                           <items>
@@ -45,7 +45,6 @@
                                              <children>
                                                 <HBox alignment="CENTER" layoutX="48.0" layoutY="-30.0" prefHeight="39.0" prefWidth="382.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                    <children>
-                                                      <ComboBox prefWidth="150.0" promptText="Source" />
                                                       <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Select All" />
                                                       <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Deselect All" />
                                                       <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Next" />
@@ -70,7 +69,30 @@
                         </SplitPane>
                      </content>
                   </Tab>
-                <Tab text="Untitled Tab 2" />
+                <Tab fx:id="copyTab" closable="false" text="Copy">
+                     <content>
+                        <SplitPane prefHeight="160.0" prefWidth="200.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <HBox layoutX="200.0" layoutY="110.0" prefHeight="346.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <ListView prefHeight="346.0" prefWidth="470.0" />
+                                          <Pane prefHeight="346.0" prefWidth="131.0">
+                                             <children>
+                                                <Button fx:id="copyButton" layoutX="42.0" layoutY="29.0" mnemonicParsing="false" onAction="#actionCopy" text="Copy" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </content></Tab>
               </tabs>
             </TabPane>
          </children>

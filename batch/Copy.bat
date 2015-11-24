@@ -1,2 +1,2 @@
-robocopy "%1" "C:\Users\ahmad\Desktop\test3" /is /r:0 /log:C:\Users\ahmad\Desktop\log\log.txt
+robocopy "%1" "%2" /mir /r:0 /log:%3 /NFL
 exit

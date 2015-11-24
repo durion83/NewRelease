@@ -3,26 +3,24 @@
    ROBOCOPY     ::     Robust File Copy for Windows                              
 -------------------------------------------------------------------------------
 
-  Started : Saturday, November 7, 2015 7:26:35 PM
+  Started : Tuesday, November 24, 2015 9:46:45 PM
    Source : C:\Users\ahmad\Desktop\test2\
-     Dest : C:\Users\ahmad\Desktop\test3\
+     Dest : \\AHMAD-NAS\homes\Ahmad\NewRelease\
 
     Files : *.*
 	    
-  Options : *.* /DCOPY:DA /COPY:DAT /IS /R:0 /W:30 
+  Options : *.* /NFL /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /R:0 /W:30 
 
 ------------------------------------------------------------------------------
 
-	                   2	C:\Users\ahmad\Desktop\test2\
-	    Same      		   33483	hw.pamella.docx
-	    Same      		      12	sss.txt
+	                   7	C:\Users\ahmad\Desktop\test2\
 
 ------------------------------------------------------------------------------
 
                Total    Copied   Skipped  Mismatch    FAILED    Extras
     Dirs :         1         0         1         0         0         0
-   Files :         2         2         0         0         0         0
-   Bytes :    32.7 k    32.7 k         0         0         0         0
+   Files :         7         0         7         0         0         0
+   Bytes :    84.4 k         0    84.4 k         0         0         0
    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
-   Ended : Saturday, November 7, 2015 7:26:35 PM
+   Ended : Tuesday, November 24, 2015 9:46:47 PM
 
