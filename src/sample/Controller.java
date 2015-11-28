@@ -36,7 +36,7 @@ public class Controller implements Initializable {
     public void addbranch(ActionEvent event) throws IOException {
        //Enter Action Here for Add Branch Button
         //create classes if needed
-       AlertBox.display("Title of Window", "Wow this alert box is awesome!");
+//       AlertBox.display("Title of Window", "Wow this alert box is awesome!");
 
     }
 
