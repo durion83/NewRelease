@@ -3,24 +3,24 @@
    ROBOCOPY     ::     Robust File Copy for Windows                              
 -------------------------------------------------------------------------------
 
-  Started : Tuesday, November 24, 2015 9:46:45 PM
+  Started : Saturday, November 28, 2015 1:44:57 PM
    Source : C:\Users\ahmad\Desktop\test2\
-     Dest : \\AHMAD-NAS\homes\Ahmad\NewRelease\
+     Dest : C:\Users\ahmad\Desktop\test3\
 
     Files : *.*
 	    
-  Options : *.* /NFL /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /R:0 /W:30 
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /R:0 /W:30 
 
 ------------------------------------------------------------------------------
 
-	                   7	C:\Users\ahmad\Desktop\test2\
+	                   8	C:\Users\ahmad\Desktop\test2\
 
 ------------------------------------------------------------------------------
 
                Total    Copied   Skipped  Mismatch    FAILED    Extras
     Dirs :         1         0         1         0         0         0
-   Files :         7         0         7         0         0         0
-   Bytes :    84.4 k         0    84.4 k         0         0         0
+   Files :         8         0         8         0         0         0
+   Bytes :    85.2 k         0    85.2 k         0         0         0
    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
-   Ended : Tuesday, November 24, 2015 9:46:47 PM
+   Ended : Saturday, November 28, 2015 1:44:57 PM
 

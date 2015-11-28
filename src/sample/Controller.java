@@ -6,6 +6,8 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+
 
 public class Controller implements Initializable {
 
@@ -13,21 +15,29 @@ public class Controller implements Initializable {
      * Initializes the controller class.
      */
 
-    public void actionCopy(ActionEvent event) throws IOException {
+    public void actionCopy(ActionEvent event) throws Exception {
         //method to start copying
         //Incomplete
         String source = "C:/Users/ahmad/Desktop/test2";
-        String destination = "//AHMAD-NAS/homes/Ahmad/NewRelease";
+        String destination = "C:/Users/ahmad/Desktop/test3";
         String log = "D:/Java_Programs/NewRelease/logs/log.txt";
 
-        Copy c = new Copy();
-        c.StartCopy(source, destination, log);
+        Copy c=new Copy();
+        c.setVar(source, destination, log);
+        try {
+            c.StartCopy();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
     }
 
-    public void addBranch(ActionEvent event) throws IOException {
+    public void addbranch(ActionEvent event) throws IOException {
        //Enter Action Here for Add Branch Button
         //create classes if needed
+       AlertBox.display("Title of Window", "Wow this alert box is awesome!");
+
     }
 
     @Override

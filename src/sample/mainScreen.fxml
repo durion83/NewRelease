@@ -61,7 +61,7 @@
                                                 <Label layoutX="256.0" layoutY="6.0" text="Server Locations" />
                                                 <HBox alignment="CENTER" layoutX="-1.0" layoutY="260.0" prefHeight="40.0" prefWidth="600.0" spacing="20.0">
                                                    <children>
-                                                      <Button fx:id="addBranchButton" mnemonicParsing="false" onAction="#addBranch" prefHeight="30.0" prefWidth="100.0" text="Add Branch" />
+                                                      <Button fx:id="addBranchButton" mnemonicParsing="false" onAction="#addbranch" prefHeight="30.0" prefWidth="100.0" text="Add Branch" />
                                                       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Delete Branch" />
                                                    </children>
                                                    <padding>
