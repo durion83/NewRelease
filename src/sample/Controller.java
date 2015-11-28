@@ -23,6 +23,16 @@ public class Controller implements Initializable {
 
     }
 
+    public void addBranch(ActionEvent event) throws IOException {
+        String source = "C:/Users/ahmad/Desktop/test2";
+        String destination = "//AHMAD-NAS/homes/Ahmad/NewRelease";
+        String log = "D:/Java_Programs/NewRelease/logs/log.txt";
+
+        Copy c = new Copy();
+        c.StartCopy(source, destination, log);
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
