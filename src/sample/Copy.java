@@ -4,6 +4,8 @@ import java.io.IOException;
 
 /**
  * Created by ahmad on 22-Nov-15.
+ * Class to execute the Robocopy batch and pass parameters
+ * parameters to be passed are Source, destination and copy log name
  */
 public class Copy {
 
