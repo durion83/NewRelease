@@ -17,7 +17,7 @@ public class Main extends Application {
         stage.setScene(scene);
 
         stage.show();
-        System.out.println("hi");
+        System.out.println("hi1");
     }
 
 
