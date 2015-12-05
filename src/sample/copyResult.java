@@ -18,7 +18,6 @@ public class copyResult extends Thread{
         this.is = is;
         this.type = type;
     }
-
     public void run()
     {
         try

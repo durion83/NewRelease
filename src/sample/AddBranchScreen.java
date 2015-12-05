@@ -33,7 +33,7 @@ public class AddBranchScreen implements Initializable {
     //path to be passed
     private String path;
 
-
+    @FXML
     public void openBrowse(ActionEvent event) throws Exception {
 
         final Label labelSelectedDirectory = new Label();
@@ -42,11 +42,10 @@ public class AddBranchScreen implements Initializable {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File selectedDirectory = directoryChooser.showDialog(Windows);
         labelSelectedDirectory.setText(selectedDirectory.getAbsolutePath());
-
         // change File object to String
         setPath(Paths.get(String.valueOf(selectedDirectory)).normalize().toString());
     }
-
+    @FXML
     public void saveBranch(ActionEvent event) throws Exception {
 
         // Close Current Window

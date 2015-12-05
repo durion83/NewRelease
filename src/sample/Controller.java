@@ -22,10 +22,7 @@ public class Controller implements Initializable {
     /**
      * Initializes the controller class.
      */
-
-
-
-
+    @FXML
     public void actionCopy(ActionEvent event) throws Exception {
         //method to start copying
         //Incomplete
@@ -41,9 +38,8 @@ public class Controller implements Initializable {
             e.printStackTrace();
         }
 
-
     }
-
+    @FXML
     public void addBranch(ActionEvent event) throws IOException {
         Stage window = new Stage();
         Parent editScreen = FXMLLoader.load(getClass().getResource("AddBranch.fxml"));
@@ -52,13 +48,6 @@ public class Controller implements Initializable {
         window.setScene(editScene);
         window.show();
     }
-
-//    public void closeAddBranchScreen(){
-//        window.hide();
-//    }
-
-
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
