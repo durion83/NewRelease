@@ -3,9 +3,9 @@
    ROBOCOPY     ::     Robust File Copy for Windows                              
 -------------------------------------------------------------------------------
 
-  Started : Saturday, November 28, 2015 5:48:51 PM
+  Started : Saturday, December 5, 2015 9:16:53 PM
    Source : C:\Users\ahmad\Desktop\test2\
-     Dest : C:\Users\ahmad\Desktop\test3\
+     Dest : C:\Users\ahmad\Desktop\test4\
 
     Files : *.*
 	    
@@ -14,15 +14,25 @@
 ------------------------------------------------------------------------------
 
 	                   8	C:\Users\ahmad\Desktop\test2\
-	  *EXTRA File 		   1.9 m	20150920_092757.jpg
-	  *EXTRA File 		   1.7 m	20150920_092926.jpg
+	    New File  		   12838	BOX 47.docx  0%  100%  
+	    New File  		   14558	Breast Cancer out line.docx  0%  100%  
+	    New File  		     798	copy.txt  0%  100%  
+	    New File  		   11760	firstName.docx  0%  100%  
+	    New File  		   34175	hw.pamella.docx  0%  100%  
+	    New File  		       0	main.txt100%  
+	    New File  		      12	sss.txt  0%  100%  
+	    New File  		   13110	The goal is.docx  0%  100%  
 
 ------------------------------------------------------------------------------
 
                Total    Copied   Skipped  Mismatch    FAILED    Extras
     Dirs :         1         0         1         0         0         0
-   Files :         8         0         8         0         0         2
-   Bytes :    85.2 k         0    85.2 k         0         0    3.66 m
+   Files :         8         8         0         0         0         0
+   Bytes :    85.2 k    85.2 k         0         0         0         0
    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
-   Ended : Saturday, November 28, 2015 5:48:51 PM
+
+
+   Speed :             5132411 Bytes/sec.
+   Speed :             293.678 MegaBytes/min.
+   Ended : Saturday, December 5, 2015 9:16:53 PM
 

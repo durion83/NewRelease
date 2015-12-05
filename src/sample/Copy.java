@@ -15,16 +15,9 @@ public class Copy {
     private String dest;
     private String log;
 
-    public void setVar(String src, String dest, String log) {
-        this.src = src;
-        this.dest = dest;
-        this.log = log;
-
-    }
-
     public void StartCopy() throws Exception {
 
-
+        System.out.println(dest);
 
         try {
             String[] cmd = new String[6];
@@ -58,5 +51,27 @@ public class Copy {
         }
     }
 
+    public String getSrc() {
+        return src;
+    }
 
+    public void setSrc(String src) {
+        this.src = src;
+    }
+
+    public String getDest() {
+        return dest;
+    }
+
+    public void setDest(String dest) {
+        this.dest = dest;
+    }
+
+    public String getLog() {
+        return log;
+    }
+
+    public void setLog(String log) {
+        this.log = log;
+    }
 }
