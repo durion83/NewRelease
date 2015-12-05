@@ -3,7 +3,7 @@
    ROBOCOPY     ::     Robust File Copy for Windows                              
 -------------------------------------------------------------------------------
 
-  Started : Saturday, November 28, 2015 1:44:57 PM
+  Started : Saturday, November 28, 2015 5:48:51 PM
    Source : C:\Users\ahmad\Desktop\test2\
      Dest : C:\Users\ahmad\Desktop\test3\
 
@@ -14,13 +14,15 @@
 ------------------------------------------------------------------------------
 
 	                   8	C:\Users\ahmad\Desktop\test2\
+	  *EXTRA File 		   1.9 m	20150920_092757.jpg
+	  *EXTRA File 		   1.7 m	20150920_092926.jpg
 
 ------------------------------------------------------------------------------
 
                Total    Copied   Skipped  Mismatch    FAILED    Extras
     Dirs :         1         0         1         0         0         0
-   Files :         8         0         8         0         0         0
-   Bytes :    85.2 k         0    85.2 k         0         0         0
+   Files :         8         0         8         0         0         2
+   Bytes :    85.2 k         0    85.2 k         0         0    3.66 m
    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
-   Ended : Saturday, November 28, 2015 1:44:57 PM
+   Ended : Saturday, November 28, 2015 5:48:51 PM
 

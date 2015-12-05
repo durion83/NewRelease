@@ -5,8 +5,16 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 
 
 public class Controller implements Initializable {
@@ -14,6 +22,9 @@ public class Controller implements Initializable {
     /**
      * Initializes the controller class.
      */
+
+
+
 
     public void actionCopy(ActionEvent event) throws Exception {
         //method to start copying
@@ -33,12 +44,20 @@ public class Controller implements Initializable {
 
     }
 
-    public void addbranch(ActionEvent event) throws IOException {
-       //Enter Action Here for Add Branch Button
-        //create classes if needed
-//       AlertBox.display("Title of Window", "Wow this alert box is awesome!");
-
+    public void addBranch(ActionEvent event) throws IOException {
+        Stage window = new Stage();
+        Parent editScreen = FXMLLoader.load(getClass().getResource("AddBranch.fxml"));
+        window.initModality(Modality.APPLICATION_MODAL);
+        Scene editScene = new Scene(editScreen);
+        window.setScene(editScene);
+        window.show();
     }
+
+//    public void closeAddBranchScreen(){
+//        window.hide();
+//    }
+
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

@@ -62,7 +62,7 @@ public class logincontroller  implements Initializable {
         System.out.println(userName);
         System.out.println(password);
 
-        if (userName.equals("operator") && password.equals("oper@321"))
+        if (userName.equals("") && password.equals(""))
         {
            return let_in = true;
         }
