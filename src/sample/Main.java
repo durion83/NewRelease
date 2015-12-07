@@ -20,7 +20,7 @@ public class Main {
             out.append(test.getBname() + ',' +test.getIp()+  "\n");
             out.close();
         }catch(IOException e){
-            System.out.println("COULD NOT LOG!!");
+            System.out.println("COULD NOT write the log!!");
         }
 
 
