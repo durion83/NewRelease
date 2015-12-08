@@ -1,8 +1,7 @@
 package sample;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+
 
 /**
  * Created by ahmad on 22-Nov-15.
@@ -15,14 +14,9 @@ public class Copy {
     private String dest;
     private String log;
 
-    public void setVar(String src, String dest, String log) {
-        this.src = src;
-        this.dest = dest;
-        this.log = log;
-
-    }
-
     public void StartCopy() throws Exception {
+
+        System.out.println(dest);
 
         try {
             String[] cmd = new String[6];
@@ -54,30 +48,30 @@ public class Copy {
         } catch (Throwable t) {
             t.printStackTrace();
         }
-
-
-//        String copyLog = log;
-//        String source = src;
-//        String destination = dest;
-//
-//        try{
-//            Process p = Runtime.getRuntime().exec("cmd /c start D:/Java_Programs/NewRelease/batch/Copy.bat " + source + " " + destination + " "+ copyLog);
-//            p.waitFor();
-//
-//        }catch (IOException e) {
-//            e.printStackTrace();
-//
-//
-//        }catch( InterruptedException e ){
-//
-//        }
-//
-//        try {
-//            Thread.sleep(3000);                 //1000 milliseconds is one second.
-//        } catch(InterruptedException ex) {
-//            Thread.currentThread().interrupt();
-//        }
     }
 
+    public String getSrc() {
+        return src;
+    }
 
+    public void setSrc(String src) {
+        this.src = src;
+    }
+
+    public String getDest() {
+        return dest;
+    }
+
+    public void setDest(String dest) {
+        String s = String.valueOf(dest);
+        this.dest = s;
+    }
+
+    public String getLog() {
+        return log;
+    }
+
+    public void setLog(String log) {
+        this.log = log;
+    }
 }

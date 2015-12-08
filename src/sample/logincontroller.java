@@ -31,8 +31,6 @@ public class logincontroller  implements Initializable {
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
 
-
-
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("mainScreen.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -62,7 +60,7 @@ public class logincontroller  implements Initializable {
         System.out.println(userName);
         System.out.println(password);
 
-        if (userName.equals("operator") && password.equals("oper@321"))
+        if (userName.equals("") && password.equals(""))
         {
            return let_in = true;
         }
@@ -71,12 +69,7 @@ public class logincontroller  implements Initializable {
          return let_in;
         }
 
-
     }
-
-
-
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
