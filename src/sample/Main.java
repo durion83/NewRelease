@@ -1,26 +1,29 @@
 package sample;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import java.io.*;
+
+public class Main {
 
 
-public class Main extends Application {
+    public static void main(String[] args)throws IOException  {
+        AddBranch test = new AddBranch();
+        test.setBname("G1");
+        test.setIp("10.10.10.10");
 
-    @Override
-    public void start(Stage stage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-        Scene scene = new Scene(root);
-        scene.getStylesheets();
-        stage.setScene(scene);
+        File log = new File("/Users/Alkandri/Desktop/projects/boubyan/NewRelease/NewRelease/testText.txt");
+        try{
+            if(log.exists()==false){
+                System.out.println("We had to make a new file.");
+                log.createNewFile();
+            }
+            PrintWriter out = new PrintWriter(new FileWriter(log,true));
+            out.append(test.getBname() + ',' +test.getIp()+  "\n");
+            out.close();
+        }catch(IOException e){
+            System.out.println("COULD NOT write the log!!");
+        }
 
-        stage.show();
-    }
 
 
-    public static void main(String[] args) {
-        launch(args);
     }
 }
