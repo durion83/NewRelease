@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.shape.StrokeLineCap;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.Scene;
@@ -31,7 +32,8 @@ public class AddBranchScreen implements Initializable {
     @FXML
     Button saveButton;
     //path to be passed
-    private String path;
+    public String path;
+
 
     public void openBrowse(ActionEvent event) throws Exception {
 
@@ -41,13 +43,10 @@ public class AddBranchScreen implements Initializable {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File selectedDirectory = directoryChooser.showDialog(Windows);
         labelSelectedDirectory.setText(selectedDirectory.getAbsolutePath());
-        // change File object to String
-//        String s = Paths.get(String.valueOf(selectedDirectory)).normalize().toString();
-//        setPath(String.valueOf(selectedDirectory));
-//        System.out.println(selectedDirectory);
-        String name = selectedDirectory.getAbsolutePath();
-        this.path =name;
-        System.out.println(path);
+        String s =selectedDirectory.getAbsolutePath();
+        setPath(s);
+//        this.path =name;
+        System.out.println("1" +path);
     }
 
     @FXML
@@ -58,13 +57,17 @@ public class AddBranchScreen implements Initializable {
     }
 
     public String getPath() {
-        System.out.println(path);
-        return path;
+        System.out.println("3 " + this.path);
+        String s = path;
+        return s;
     }
 
     public void setPath(String path) {
+        System.out.println("2" +path);
         this.path = path;
-        System.out.println(path);
+    }
+    public void display(){
+        System.out.println("4 "+ path);
     }
 
     public void initialize(URL location, ResourceBundle resources) {

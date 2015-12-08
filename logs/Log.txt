@@ -3,9 +3,9 @@
    ROBOCOPY     ::     Robust File Copy for Windows                              
 -------------------------------------------------------------------------------
 
-  Started : Saturday, December 5, 2015 9:16:53 PM
+  Started : Saturday, December 5, 2015 10:46:28 PM
    Source : C:\Users\ahmad\Desktop\test2\
-     Dest : C:\Users\ahmad\Desktop\test4\
+     Dest : D:\Java_Programs\NewRelease\null\
 
     Files : *.*
 	    
@@ -13,26 +13,5 @@
 
 ------------------------------------------------------------------------------
 
-	                   8	C:\Users\ahmad\Desktop\test2\
-	    New File  		   12838	BOX 47.docx  0%  100%  
-	    New File  		   14558	Breast Cancer out line.docx  0%  100%  
-	    New File  		     798	copy.txt  0%  100%  
-	    New File  		   11760	firstName.docx  0%  100%  
-	    New File  		   34175	hw.pamella.docx  0%  100%  
-	    New File  		       0	main.txt100%  
-	    New File  		      12	sss.txt  0%  100%  
-	    New File  		   13110	The goal is.docx  0%  100%  
-
-------------------------------------------------------------------------------
-
-               Total    Copied   Skipped  Mismatch    FAILED    Extras
-    Dirs :         1         0         1         0         0         0
-   Files :         8         8         0         0         0         0
-   Bytes :    85.2 k    85.2 k         0         0         0         0
-   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
-
-
-   Speed :             5132411 Bytes/sec.
-   Speed :             293.678 MegaBytes/min.
-   Ended : Saturday, December 5, 2015 9:16:53 PM
-
+2015/12/05 22:46:28 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\ahmad\Desktop\test2\
+The system cannot find the file specified.

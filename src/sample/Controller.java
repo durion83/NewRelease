@@ -1,5 +1,6 @@
 package sample;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -29,11 +30,11 @@ public class Controller implements Initializable {
         //Incomplete
         String source = "C:/Users/ahmad/Desktop/test2";
         String log = "D:/Java_Programs/NewRelease/logs/log.txt";
-        System.out.println(destination);
+
         Copy c = new Copy();
         AddBranchScreen a = new AddBranchScreen();
         setDestination(a.getPath());
-        System.out.println(destination);
+
         c.setDest(destination);
         c.setLog(log);
         c.setSrc(source);
@@ -54,12 +55,13 @@ public class Controller implements Initializable {
         window.show();
     }
 
-    public String getDestination() {
-        return destination;
-    }
+//    public String getDestination() {
+//        return destination;
+//    }
 
     public void setDestination(String destination) {
         this.destination = destination;
+
     }
 
     @Override

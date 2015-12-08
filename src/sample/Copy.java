@@ -1,8 +1,7 @@
 package sample;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+
 
 /**
  * Created by ahmad on 22-Nov-15.
@@ -64,7 +63,8 @@ public class Copy {
     }
 
     public void setDest(String dest) {
-        this.dest = dest;
+        String s = String.valueOf(dest);
+        this.dest = s;
     }
 
     public String getLog() {
